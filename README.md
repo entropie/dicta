@@ -69,7 +69,7 @@ On a Wayland desktop with PipeWire and Nix flakes enabled, start the daemon
 in your desktop session. Replace `whisper-host` with your Wyoming server:
 
 ```sh
-nix run 'github:entropie/dicta#dictad' -- \
+nix run 'github:matthewjhunter/dicta#dictad' -- \
   --asr-backend wyoming --asr-wyoming-addr 'tcp://whisper-host:10300'
 ```
 
@@ -77,7 +77,7 @@ In a second terminal, open the dictation panel, speak, and press Enter to
 copy the transcript to the clipboard:
 
 ```sh
-nix run 'github:entropie/dicta#dicta' -- toggle_talk --mode clip
+nix run 'github:matthewjhunter/dicta#dicta' -- toggle_talk --mode clip
 ```
 
 The client is also the default app. From a local checkout, use
